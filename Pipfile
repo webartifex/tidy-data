@@ -1,0 +1,20 @@
+[[source]]
+url = "https://pypi.org/simple"
+verify_ssl = true
+name = "pypi"
+
+[packages]
+pandas = "*"
+jupyter = "*"
+watermark = "*"
+savreaderwriter = "*"
+
+[dev-packages]
+black = "*"
+blackcellmagic = "*"
+
+[requires]
+python_version = "3.6"
+
+[pipenv]
+allow_prereleases = true
