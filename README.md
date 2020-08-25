@@ -1,21 +1,18 @@
 # Tidy Data
 
-The purpose of this repository is to re-do the work described in the paper
-[Tidy Data](tidy-data.pdf) by Hadley Wickham (member of the RStudio team) in
-Python.
+The purpose of this repository is to illustrate how the data cleaning process described
+    in the paper "[Tidy Data](tidy-data.pdf)" by Hadley Wickham, a member of the
+    [RStudio](https://rstudio.com/) team, can be done in
+    [Python](https://www.python.org/).
 
-The paper was published in 2014 in the Journal of
-[Statistical Software](https://www.jstatsoft.org/article/view/v059i10). The
-author offers it for free download
-[here](http://vita.had.co.nz/papers/tidy-data.html). Furthermore, the original
-R code is available in a Github
-[repository](https://github.com/hadley/tidy-data)
+The paper was published in 2014 in the [Journal of Statistical Software](https://www.jstatsoft.org/article/view/v059i10).
+The author offers it for free [here](http://vita.had.co.nz/papers/tidy-data.html).
+Furthermore, the original [R](https://www.r-project.org/) code is available [here](https://github.com/hadley/tidy-data).
 
-After installing this project, it is recommended to first read the paper to get
-the big picture and then work through the six Jupyter notebooks (listed further
-below).
+After installing the dependencies for this project (cf., the [installation notes](https://github.com/webartifex/tidy-data#installation)
+    below), it is recommended to first read the paper to get the big picture and
+    then work through the six Jupyter notebooks listed below.
 
-See installation notes at the bottom.
 
 ## Summary
 
@@ -23,50 +20,51 @@ See installation notes at the bottom.
 ### Definition
 
 **Tidy** data is defined as data that comes in a table form adhering to the
-following requirements:
+    following requirements:
+1. each variable is a column,
+2. each observation a row, and
+3. each type of observational unit forms a table.
 
-1. Each variable forms a column.
-2. Each observation forms a row.
-3. Each type of observational unit forms a table.
-
-This is equivalent to Codd's 3rd normal form (in the context of relational
-databases). A dataset that does not satisfy these properties is called
-**messy**.
+This is equivalent to [Codd's 3rd normal form](https://en.wikipedia.org/wiki/Third_normal_form),
+    a concept from the theory on relational databases.
+A dataset that does *not* satisfy these properties is called **messy**.
 
 
-### Tidying messy Data
+### Tidying Data
 
-The five most common problems with messy data are as follows:
+The five most common problems with messy data are:
 
-- Column headers are values, not variable names
-[[notebook](1_column_headers_are_values.ipynb)]
-- Multiple variables are stored in one column
-[[notebook](2_multiple_variables_stored_in_one_column.ipynb)]
-- Variables are stored in both rows and columns
-[[notebook](3_variables_are_stored_in_both_rows_and_columns.ipynb)]
-- Multiple types of observational units are stored in the same table
-[[notebook](4_multiple_types_in_one_table.ipynb)]
-- A single observational unit is stored in multiple tables
-[[notebook](5_one_type_in_multiple_tables.ipynb)]
+- column headers are values, not variable names
+  (cf., [notebook 1](https://nbviewer.jupyter.org/github/webartifex/tidy-data/blob/master/1_column_headers_are_values.ipynb))
+- multiple variables are stored in one column
+  (cf., [notebook 2](https://nbviewer.jupyter.org/github/webartifex/tidy-data/blob/master/2_multiple_variables_stored_in_one_column.ipynb))
+- variables are stored in both rows and columns
+  (cf., [notebook 3](https://nbviewer.jupyter.org/github/webartifex/tidy-data/blob/master/3_variables_are_stored_in_both_rows_and_columns.ipynb))
+- multiple types of observational units are stored in the same table
+  (cf., [notebook 4](https://nbviewer.jupyter.org/github/webartifex/tidy-data/blob/master/4_multiple_types_in_one_table.ipynb))
+- a single observational unit is stored in multiple tables
+  (cf., [notebook 5](https://nbviewer.jupyter.org/github/webartifex/tidy-data/blob/master/5_one_type_in_multiple_tables.ipynb))
 
-Further, a [case study](6_case_study.ipynb) shows the advantages of tidy data
-(as standardized input/output to statistical functions).
 
-## Download & Installation
+### Case Study
 
-Create a local copy of this repository with:
+A case study (cf., [notebook 6](https://nbviewer.jupyter.org/github/webartifex/tidy-data/blob/master/6_case_study.ipynb))
+    shows the advantages of tidy data as a standardized input to statistical functions.
+
+
+## Installation
+
+Get a local copy of this repository with [git](https://git-scm.com/).
 
 `git clone https://github.com/webartifex/tidy-data.git`
 
-This project uses [pipenv](https://docs.pipenv.org/) to manage its
-dependencies.
+If you are not familiar with [git](https://git-scm.com/), simply download the latest
+    version of the files in a zip archive [here](https://github.com/webartifex/tidy-data/archive/master.zip).
 
-To install all third-party Python packages in the most recent version into a
-project-local virtual environment, run:
+This project uses [poetry](https://python-poetry.org/docs/) to manage its dependencies.
+Install all third-party packages into a [virtual environment](https://docs.python.org/3/library/venv.html).
 
-`pipenv install`
+`poetry install`
 
-To install all packages with the same version as of the time of creating this
-project (for exact reproducability), run:
-
-`pipenv install --ignore-pipfile`
+Alternatively, use the [Anaconda Distribution](https://www.anaconda.com/products/individual)
+    that *should* also suffice to run the provided notebooks.
