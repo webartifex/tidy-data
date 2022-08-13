@@ -38,12 +38,14 @@ Un estudio de caso muestra las ventajas de tidy data como un input estandarizado
 
 Obten una copia local de este repositorio con [git](https://git-scm.com/).
 
-`git clone https://github.com/webartifex/tidy-data.git`
+`https://github.com/vmlandae/tidy-data-mds-espanol.git`
 
-Si no tienes familiaridad con [git](https://git-scm.com/), sencillamente descarga la última versión en un archivo zip [aquí](https://github.com/webartifex/tidy-data/archive/master.zip).
+Si no tienes familiaridad con [git](https://git-scm.com/), sencillamente descarga la última versión en un archivo zip [aquí](https://github.com/vmlandae/tidy-data-mds-espanol/archive/refs/heads/main.zip).
 
 Este proyecto usa [poetry](https://python-poetry.org/docs/) para manejar sus dependencias, instalando todos los paquetes externos en un [virtual environment](https://docs.python.org/3/library/venv.html).
 
 `poetry install`
 
-De manera alternativa, usando [Anaconda Distribution](https://www.anaconda.com/products/individual) no debería haber problema para correr estos notebooks.
+```python
+
+```
