@@ -42,9 +42,7 @@ Obten una copia local de este repositorio con [git](https://git-scm.com/).
 
 Si no tienes familiaridad con [git](https://git-scm.com/), sencillamente descarga la última versión en un archivo zip [aquí](https://github.com/vmlandae/tidy-data-mds-espanol/archive/refs/heads/main.zip).
 
-Este proyecto usa [poetry](https://python-poetry.org/docs/) para manejar sus dependencias, instalando todos los paquetes externos en un [virtual environment](https://docs.python.org/3/library/venv.html).
-
-`poetry install`
+En esta versión actualizada, este proyecto usa [conda](https://docs.conda.io/en/latest/) para manejar sus dependencias.
 
 ```python
 
