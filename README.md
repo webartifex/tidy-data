@@ -1,70 +1,44 @@
 # Tidy Data
 
-The purpose of this repository is to illustrate how the data cleaning process described
-    in the paper "[Tidy Data](tidy-data.pdf)" by Hadley Wickham, a member of the
-    [RStudio](https://rstudio.com/) team, can be done in
-    [Python](https://www.python.org/).
+El propósito de este repositorio es ilustrar cómo se puede realizar en Python (con pandas) el proceso de limpieza de datos descrito en el artículo "Tidy Data" de Hadley Wickham. Este repositorio fue traducido al español del siguiente repositorio: https://github.com/webartifex/tidy-data
 
-The paper was published in 2014 in the [Journal of Statistical Software](https://www.jstatsoft.org/article/view/v059i10).
-The author offers it for free [here](http://vita.had.co.nz/papers/tidy-data.html).
-Furthermore, the original [R](https://www.r-project.org/) code is available [here](https://github.com/hadley/tidy-data).
-
-After installing the dependencies for this project (cf., the [installation notes](https://github.com/webartifex/tidy-data#installation)
-    below), it is recommended to first read the paper to get the big picture and
-    then work through the six Jupyter notebooks listed below.
+## Resumen
 
 
-## Summary
+### Definición
 
+**Tidy data** se definen como datos que vienen en forma de tabla que se adhieren a los siguientes requisitos:  
+1. cada variable es una columna,
+2. cada observación una fila, y
+3. cada tipo de unidad de observación forma una tabla.
 
-### Definition
-
-**Tidy** data is defined as data that comes in a table form adhering to the
-    following requirements:
-1. each variable is a column,
-2. each observation a row, and
-3. each type of observational unit forms a table.
-
-This is equivalent to [Codd's 3rd normal form](https://en.wikipedia.org/wiki/Third_normal_form),
-    a concept from the theory on relational databases.
-A dataset that does *not* satisfy these properties is called **messy**.
+Esto es equivalente a [la tercera forma normal de Codd] (https://en.wikipedia.org/wiki/Third_normal_form), un concepto de la teoría sobre bases de datos relacionales. Un conjunto de datos que *no* satisface estas propiedades se llama **messy data**.
 
 
 ### Tidying Data
 
-The five most common problems with messy data are:
+Los cinco problemas más comunes con los datos desordenados son:
 
-- column headers are values, not variable names
-  (cf., [notebook 1](https://nbviewer.jupyter.org/github/webartifex/tidy-data/blob/master/1_column_headers_are_values.ipynb))
-- multiple variables are stored in one column
-  (cf., [notebook 2](https://nbviewer.jupyter.org/github/webartifex/tidy-data/blob/master/2_multiple_variables_stored_in_one_column.ipynb))
-- variables are stored in both rows and columns
-  (cf., [notebook 3](https://nbviewer.jupyter.org/github/webartifex/tidy-data/blob/master/3_variables_are_stored_in_both_rows_and_columns.ipynb))
-- multiple types of observational units are stored in the same table
-  (cf., [notebook 4](https://nbviewer.jupyter.org/github/webartifex/tidy-data/blob/master/4_multiple_types_in_one_table.ipynb))
-- a single observational unit is stored in multiple tables
-  (cf., [notebook 5](https://nbviewer.jupyter.org/github/webartifex/tidy-data/blob/master/5_one_type_in_multiple_tables.ipynb))
+1. Los encabezados de las columnas son valores, no nombres de variables.
+2. Múltiples variables se almacenan en una columna
+3. Las variables se almacenan tanto en filas como en columnas
+4. Múltiples tipos de unidades de observación se almacenan en la misma tabla
+5. Una sola unidad de observación se almacena en varias tablas
 
 
-### Case Study
+### Estudio de caso
 
-A case study (cf., [notebook 6](https://nbviewer.jupyter.org/github/webartifex/tidy-data/blob/master/6_case_study.ipynb))
-    shows the advantages of tidy data as a standardized input to statistical functions.
+Un estudio de caso muestra las ventajas de **tidy data** como un input estandarizado para funciones estadísticas y de visualización.
 
+## Instalación
 
-## Installation
+Obten una copia local de este repositorio con [git](https://git-scm.com/).
 
-Get a local copy of this repository with [git](https://git-scm.com/).
+`https://github.com/vmlandae/tidy-data-mds-espanol.git`
 
-`git clone https://github.com/webartifex/tidy-data.git`
+En esta versión actualizada, este proyecto usa [conda](https://docs.conda.io/en/latest/) para manejar sus dependencias.
+El archivo `environment.yml` tiene las dependencias 
 
-If you are not familiar with [git](https://git-scm.com/), simply download the latest
-    version of the files in a zip archive [here](https://github.com/webartifex/tidy-data/archive/master.zip).
+```python
 
-This project uses [poetry](https://python-poetry.org/docs/) to manage its dependencies.
-Install all third-party packages into a [virtual environment](https://docs.python.org/3/library/venv.html).
-
-`poetry install`
-
-Alternatively, use the [Anaconda Distribution](https://www.anaconda.com/products/individual)
-    that *should* also suffice to run the provided notebooks.
+```
